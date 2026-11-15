@@ -67,6 +67,22 @@ class MasterDataApiTests(unittest.TestCase):
             self.assertTrue(len(data) > 100)
         self.assertEqual(self.req('/static/../app.py')[0], 404)
 
+    def test_about_article_and_video_placeholder(self):
+        status, headers, page = self.req('/about')
+        self.assertEqual(status, 200)
+        self.assertIn('text/html', headers['Content-Type'])
+        self.assertIn(b'For the lovers.', page)
+        self.assertIn(b'And the haters.', page)
+        self.assertIn(b'data-youtube-url=""', page)
+        self.assertIn(b'Choose your route', page)
+        self.assertIn(b'role="tablist"', page)
+        for path in ('/static/about.css', '/static/favicon.svg'):
+            status, _, content = self.req(path)
+            self.assertEqual(status, 200)
+            self.assertGreater(len(content), 100)
+        _, _, main = self.req('/')
+        self.assertIn(b'href="/about"', main)
+
     def test_suggests_known_candidates(self):
         status, matches = self.jsonreq('/api/matches')
         self.assertEqual(status, 200)
