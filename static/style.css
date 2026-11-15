@@ -96,3 +96,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 /* Make the four-square brand device legible at desktop and mobile sizes. */
 .brand-icon{align-items:stretch;justify-items:stretch}
 .brand-icon .brand-tile{width:100%;height:100%;align-self:stretch;justify-self:stretch}
+
+/* Article link uses existing navigation; retain horizontal access on small screens. */
+.nav a.nav-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+@media(max-width:700px){.nav{overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a.nav-link{flex:none}}
