@@ -1,6 +1,6 @@
-# MasterData AI · SachinTechpro
+# Column & Key · SachinTechpro
 
-**One customer. One clear picture.** An interactive enterprise master-data-management (MDM) demo with a friendly, minimal consumer-app interface. Source of truth for this demonstration: **CSV files only**.
+**Customer records, in context.** An interactive enterprise master-data-management (MDM) demo with an original editorial data-workbench interface. Source of truth for this demonstration: **CSV files only**.
 
 ## What to try
 

@@ -78,7 +78,7 @@ function renderChatSelect(){
 }
 function renderChat(){
  const body=$('#chat-body');if(!state.chat.length)return;
- body.innerHTML=state.chat.map(m=>`<div class="chat-bubble ${m.role==='user'?'user':'bot'}"><small>${m.role==='user'?'You':'MasterData assistant'}</small><div>${esc(m.text)}</div>${m.mode?`<small style="margin-top:8px">${esc(m.mode)}</small>`:''}${m.evidence?.length?`<div class="answer-meta">${m.evidence.map(e=>`<span>↳ ${esc(e)}</span>`).join('')}</div><details class="trace-details"><summary>See technical retrieval trace</summary><ul>${m.trace.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details>`:''}</div>`).join('');
+ body.innerHTML=state.chat.map(m=>`<div class="chat-bubble ${m.role==='user'?'user':'bot'}"><small>${m.role==='user'?'You':'Column & Key'}</small><div>${esc(m.text)}</div>${m.mode?`<small style="margin-top:8px">${esc(m.mode)}</small>`:''}${m.evidence?.length?`<div class="answer-meta">${m.evidence.map(e=>`<span>↳ ${esc(e)}</span>`).join('')}</div><details class="trace-details"><summary>See technical retrieval trace</summary><ul>${m.trace.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details>`:''}</div>`).join('');
  body.scrollTop=body.scrollHeight;
 }
 async function ask(question){
