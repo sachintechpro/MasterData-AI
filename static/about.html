@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#24342e" />
+  <meta name="description" content="An interactive introduction to Column & Key: a working master data management demonstration for MDM lovers, skeptics, architects, and the merely curious." />
+  <meta property="og:title" content="Column & Key | MDM for the Lovers and the Haters" />
+  <meta property="og:description" content="One customer, three versions of the truth. Explore golden records, conflicting identities, source evidence, and a conversational data interface." />
+  <meta property="og:type" content="article" />
+  <title>About Column &amp; Key | MDM for the Lovers and the Haters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+  <link href="/static/style.css" rel="stylesheet" />
+  <link href="/static/about.css" rel="stylesheet" />
+</head>
+<body class="about-page">
+  <div class="announcement"><span class="dot small"></span> An interactive customer-data demo — powered by CSV files <a class="announcement-link" href="/#data">See how it works <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Column and Key home"><span class="brand-icon" aria-hidden="true"><span class="brand-tile tl"></span><span class="brand-tile tr"></span><span class="brand-tile bl"></span><span class="brand-tile br"></span></span><span class="brand-name">Column <span class="brand-accent">&amp;</span> Key</span><span class="brand-edition">RECORD WORKBENCH</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="/#home">Overview</a>
+        <a class="nav-link" href="/#customers">Customer 360</a>
+        <a class="nav-link" href="/#matches">Match review</a>
+        <a class="nav-link" href="/#assistant">Ask data</a>
+        <a class="nav-link" href="/#data">Data &amp; QA</a>
+        <a class="nav-link active" aria-current="page" href="/about">About</a>
+      </nav>
+      <span class="madeby">by <strong>SachinTechpro</strong></span>
+    </div>
+  </header>
+
+  <main id="main" class="about-main">
+    <section class="about-lead content-wrap" aria-labelledby="article-title">
+      <div class="about-topline"><span>FIELD NOTES / 001</span><span>AN INTERACTIVE INTRODUCTION</span></div>
+      <div class="about-head-grid">
+        <div><div class="kicker">THE CASE FOR — AND AGAINST — MDM</div><h1 id="article-title">For the lovers.<br/><span class="highlight">And the haters.</span></h1></div>
+        <div class="about-intro"><p>Everybody wants one source of truth. Nobody agrees on what the truth is when three systems tell three different stories.</p><p><strong>Column &amp; Key</strong> is a working experiment in what happens next. Choose your side, examine the evidence, and decide whom to trust.</p><a class="about-text-link" href="#choose-a-side">Choose your route <span aria-hidden="true">↘</span></a></div>
+      </div>
+    </section>
+
+    <section class="video-section content-wrap" aria-label="Column and Key video introduction">
+      <!-- Replace data-youtube-url with the supplied YouTube video URL. Do not embed an unrelated sample video. -->
+      <div class="video-stage" id="video-stage" data-youtube-url="">
+        <div class="video-poster" id="video-poster">
+          <div class="video-grid" aria-hidden="true"></div>
+          <div class="video-source source-a" aria-hidden="true"><span>CRM</span><strong>Michael A. Johnson</strong><small>CRM-105</small></div>
+          <div class="video-source source-b" aria-hidden="true"><span>POLICY</span><strong>Mike Johnson</strong><small>PC-205</small></div>
+          <div class="video-source source-c" aria-hidden="true"><span>BILLING</span><strong>Michael Johnson</strong><small>BC-305</small></div>
+          <div class="video-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="video-record" aria-hidden="true"><span>GOLDEN RECORD</span><strong>MDM-1005</strong><small>REVIEWED LINKS</small></div>
+          <div class="video-preview-label"><div class="video-symbol" aria-hidden="true">▶</div><div><strong>Video walkthrough coming soon</strong><span>Column &amp; Key / Intro film</span></div></div>
+        </div>
+      </div>
+      <div class="video-caption"><span>01 / WATCH THE WORKFLOW</span><span id="video-status">YouTube hero reserved · video link to be added</span></div>
+    </section>
+
+    <div class="reading-shell content-wrap">
+      <aside class="article-index" aria-label="In this article"><div class="index-inner"><span class="kicker">IN THIS STORY</span><a href="#problem">01 / The problem</a><a href="#choose-a-side">02 / Pick a side</a><a href="#one-interface">03 / One interface</a><a href="#under-the-hood">04 / Under the hood</a><a href="#trust">05 / The trust test</a><a href="#why">06 / Why I built it</a><a href="#your-turn">07 / Your turn</a><div class="index-divider"></div><a class="index-back" href="/">↗ Open the application</a></div></aside>
+      <article class="story">
+        <section id="problem" class="story-section">
+          <span class="chapter">01 / THE PROBLEM</span>
+          <h2>One customer. Three versions of the truth.</h2>
+          <p>Let's talk about Master Data Management (MDM).</p>
+          <p>If you love MDM, you probably appreciate clean data, golden records, identity resolution, governance, and the promise of a consistent customer view across an enterprise.</p>
+          <p>If you hate MDM, you've probably experienced the other side: duplicate records, endless reconciliation, complicated integrations, conflicting ownership rules, and systems that still cannot agree on something as simple as a customer's address.</p>
+          <p><strong>Both sides have a point.</strong> And that's exactly why I built Column &amp; Key.</p>
+          <div class="record-comparison" aria-label="Three identities that may belong to the same customer"><div><span>CRM / CRM-105</span><strong>Michael A. Johnson</strong></div><div><span>POLICY / PC-205</span><strong>Mike Johnson</strong></div><div><span>BILLING / BC-305</span><strong>Michael Johnson</strong></div></div>
+          <p>They may all represent the same person. But should an enterprise simply assume that? What happens when their addresses differ? When two customers share a phone number? When a matching algorithm confidently links the wrong individuals?</p>
+          <p>This is where MDM becomes interesting: not because it creates another database, but because it introduces <strong>identity, trust, rules, traceability, and accountability</strong> across disconnected systems.</p>
+        </section>
+
+        <section id="choose-a-side" class="story-section">
+          <span class="chapter">02 / CHOOSE YOUR ROUTE</span>
+          <h2>MDM lover or MDM hater?</h2>
+          <p>No certification required. You can explore the same working application from two very different perspectives.</p>
+          <div class="side-picker" role="tablist" aria-label="Choose an MDM perspective"><button class="side-tab" type="button" id="tab-lover" role="tab" aria-selected="true" aria-controls="panel-lover" data-side="lover"><span>01</span> I love MDM <span aria-hidden="true">↗</span></button><button class="side-tab" type="button" id="tab-hater" role="tab" aria-selected="false" aria-controls="panel-hater" data-side="hater" tabindex="-1"><span>02</span> I'm not convinced <span aria-hidden="true">↗</span></button></div>
+          <div class="side-panel" id="panel-lover" role="tabpanel" aria-labelledby="tab-lover">
+            <span class="panel-label">THE OPTIMIST'S PATH / BUILD THE GOLDEN RECORD</span><h3>Make the connections. Keep the evidence.</h3>
+            <p>Start in <strong>Customer 360</strong> and find Michael Johnson. Initially, the policy and billing identities aren't approved, so their transactions don't appear in his mastered view.</p>
+            <p>Visit <strong>Match review</strong>. Inspect the candidate identities, compare the names and other evidence, and approve a link when it looks justified. Return to Customer 360 to see new policies, claims, or invoices from the linked records.</p>
+            <p>The original source IDs haven't disappeared. Their provenance remains available. <strong>A golden record should establish trust, not erase the evidence.</strong></p>
+            <div class="path-steps"><a href="/#customers">1. Inspect Customer 360 <span>↗</span></a><a href="/#matches">2. Review and approve a link <span>↗</span></a><a href="/#customers">3. Revisit the mastered view <span>↗</span></a></div>
+          </div>
+          <div class="side-panel" id="panel-hater" role="tabpanel" aria-labelledby="tab-hater" hidden>
+            <span class="panel-label">THE SKEPTIC'S PATH / TRY TO BREAK IT</span><h3>Question every match. Find the cracks.</h3>
+            <p>Look at Helena Ortiz. Source records match on several identity attributes but disagree on the address. Does that justify linking them? Which system gets to decide which address wins?</p>
+            <p>Review the candidate, then approve or reject the suggestion. Examine the conflict and the evidence preserved in the record. Ask who made the decision and whether an algorithm should ever be allowed to merge identities automatically.</p>
+            <p><strong>A high matching score is not proof of identity.</strong> The real work is deciding what the evidence means—and what the enterprise is allowed to do with it.</p>
+            <div class="path-steps"><a href="/#matches">1. Challenge a proposed match <span>↗</span></a><a href="/#customers">2. Inspect remaining conflicts <span>↗</span></a><a href="/#data">3. Examine the source rows <span>↗</span></a></div>
+          </div>
+          <p class="small-note">This is a shared fictional-data sandbox. Match approvals and rejections change the demonstration state until reset or restart.</p>
+        </section>
+
+        <section id="one-interface" class="story-section">
+          <span class="chapter">03 / NOW ADD ONE INTERFACE</span>
+          <h2>What if people could just ask?</h2>
+          <p>What if business users didn't need to know which system held which piece of information? What if they could ask a question through one interface?</p>
+          <div class="question-list"><a href="/#assistant"><span>ASK 01</span> Are there any open claims? <strong>↗</strong></a><a href="/#assistant"><span>ASK 02</span> Does this customer have unpaid invoices? <strong>↗</strong></a><a href="/#assistant"><span>ASK 03</span> Where did this information come from? <strong>↗</strong></a></div>
+          <p>Column &amp; Key uses approved identity links to retrieve facts from its CSV sources and show the supporting records and technical trace. It uses a transparent rule-based question handler by default, with optional LLM integration.</p>
+          <blockquote>MDM establishes trusted identity. Enterprise applications retain transactional facts. A conversational interface makes them accessible.</blockquote>
+          <p>A chatbot alone doesn't manufacture trustworthy enterprise data. If the underlying identities are wrong, a polished answer can be wrong about the wrong person.</p>
+        </section>
+
+        <section id="under-the-hood" class="story-section">
+          <span class="chapter">04 / UNDER THE HOOD</span>
+          <h2>Deliberately simple. Technically inspectable.</h2>
+          <p>No commercial MDM license. No heavyweight data platform. No live Salesforce or Guidewire integration. The purpose is to expose the mechanics that enterprise architecture diagrams often hide.</p>
+          <div class="architecture-list"><div><span>01 / DATA</span><strong>Eight fictional CSV files</strong><p>Customer, policy, claim, billing, identity-link, and review-decision records.</p></div><div><span>02 / API</span><strong>Python + REST</strong><p>Customer joins, match decisions, data access, and explainable evidence.</p></div><div><span>03 / GOVERNANCE</span><strong>Human-reviewed matching</strong><p>Deterministic scores, approvals, rejection, source provenance, and conflicts.</p></div><div><span>04 / QUALITY</span><strong>Executable checks</strong><p>API and business-flow tests, plus on-demand CSV integrity checks.</p></div></div>
+          <p>The simple architecture is intentional. This is a <strong>working proof of concept</strong>, not a replacement for a commercial MDM product or a claim of production-grade enterprise integration.</p>
+          <a class="about-text-link" href="/#data">Inspect the CSVs and run QA checks <span aria-hidden="true">↗</span></a>
+        </section>
+
+        <section id="trust" class="story-section">
+          <span class="chapter">05 / THE TRUST TEST</span>
+          <h2>Trust the record. Not the dashboard.</h2>
+          <p>Try a simple experiment. Start with an unlinked customer identity and ask about their policies or billing information. Then review and approve an appropriate identity match and ask the same question again.</p>
+          <p>Compare the answers. Inspect the source rows. Notice how <strong>identity resolution determines what the assistant can reliably tell you.</strong></p>
+          <div class="challenge"><span>YOUR CHALLENGE</span><strong>Does your answer change when you change what the system is allowed to know?</strong><a href="/#assistant">Run the experiment <span>↗</span></a></div>
+          <p>When an incorrect identity link causes an incorrect answer, that's not only an AI problem. It's a data-governance problem that AI makes harder to ignore.</p>
+        </section>
+
+        <section id="why" class="story-section">
+          <span class="chapter">06 / WHY I BUILT IT</span>
+          <h2>Make invisible decisions visible.</h2>
+          <p>My interest sits at the intersection of enterprise systems, business workflows, integration, quality engineering, and practical AI applications.</p>
+          <p>In enterprise environments, customer information moves across CRM, insurance policy systems, billing, service platforms, and integration layers. The hard part is rarely displaying a customer name. It's knowing how records relate, who owns a field, what happens when systems disagree, and whether downstream applications can trust the result.</p>
+          <p>Column &amp; Key is a small experiment in making those questions visible, testable, and approachable—without pretending that the underlying decisions are simple.</p>
+        </section>
+
+        <section id="your-turn" class="story-section final-section">
+          <span class="chapter">07 / YOUR TURN</span>
+          <h2>So which side are you on?</h2>
+          <p>Should a high-scoring identity match ever become a golden-record link automatically, or should a human always approve it?</p>
+          <p>As enterprise AI becomes common, should MDM remain a separate governance capability—or become a foundational service that enterprise AI depends on?</p>
+          <p><strong>Try the application. Challenge the assumptions. Follow the evidence.</strong></p>
+          <div class="final-actions"><a class="button primary large" href="/">Explore Column &amp; Key <span aria-hidden="true">↗</span></a><a class="button outlined large" href="https://github.com/sachintechpro/MasterData-AI" target="_blank" rel="noopener noreferrer">Explore source code <span aria-hidden="true">↗</span></a></div>
+        </section>
+        <p class="editorial-note">Column &amp; Key is an independent educational demonstration using fictional data. It illustrates MDM principles, identity resolution, data governance, and source-grounded information retrieval—not a deployed commercial MDM platform.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><span><strong>Column <span class="brand-accent">&amp;</span> Key</strong> <span class="footer-divider">/</span> a SachinTechpro demonstration</span><span>Built for clarity · Powered by CSV · <a href="/">Back to the app ↗</a></span></div></footer>
+  <script>
+  (() => {
+    const tabs = Array.from(document.querySelectorAll('[data-side]'));
+    function selectSide(side, focus) {
+      tabs.forEach(tab => {
+        const active = tab.dataset.side === side;
+        tab.setAttribute('aria-selected', String(active));
+        tab.tabIndex = active ? 0 : -1;
+        document.getElementById('panel-' + tab.dataset.side).hidden = !active;
+        if (active && focus) tab.focus();
+      });
+    }
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => selectSide(tab.dataset.side, false));
+      tab.addEventListener('keydown', event => {
+        if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+        event.preventDefault();
+        const index = tabs.indexOf(tab);
+        const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+        selectSide(tabs[next].dataset.side, true);
+      });
+    });
+    // When a YouTube link is supplied, put it in data-youtube-url on #video-stage.
+    const stage = document.getElementById('video-stage');
+    const raw = stage.dataset.youtubeUrl.trim();
+    if (raw) {
+      try {
+        const url = new URL(raw);
+        let id = '';
+        if (url.hostname === 'youtu.be') id = url.pathname.slice(1).split('/')[0];
+        else if (['youtube.com','www.youtube.com','m.youtube.com','www.youtube-nocookie.com','youtube-nocookie.com'].includes(url.hostname)) id = url.searchParams.get('v') || url.pathname.match(/^\/(?:embed|shorts|live)\/([\w-]{11})/)?.[1] || '';
+        if (!/^[\w-]{11}$/.test(id)) throw new Error('Invalid video ID');
+        const frame = document.createElement('iframe');
+        frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0';
+        frame.title = 'Column & Key video introduction';
+        frame.loading = 'lazy';
+        frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.referrerPolicy = 'strict-origin-when-cross-origin';
+        frame.allowFullscreen = true;
+        stage.replaceChildren(frame);
+        document.getElementById('video-status').textContent = 'VIDEO WALKTHROUGH / YOUTUBE';
+      } catch (_) { /* Keep the accessible placeholder when no valid YouTube URL is configured. */ }
+    }
+  })();
+  </script>
+</body>
+</html>
