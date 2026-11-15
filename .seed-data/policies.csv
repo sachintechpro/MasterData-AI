@@ -1,0 +1,9 @@
+policy_id,source_customer_id,product,status,premium,renewal_date
+POL-A001,PC-201,Homeowners,Active,1850,2027-02-14
+POL-A002,PC-201,Auto,Active,1140,2027-04-02
+POL-A003,PC-202,Auto,Renewal due,1680,2026-12-01
+POL-A004,PC-203,Renters,Active,275,2027-06-03
+POL-A005,PC-204,Homeowners,Active,2100,2027-05-30
+POL-A006,PC-205,Auto,Active,1480,2027-08-14
+POL-A007,PC-205,Homeowners,Active,1960,2027-03-21
+POL-A008,PC-206,Auto,Pending,920,2027-10-20

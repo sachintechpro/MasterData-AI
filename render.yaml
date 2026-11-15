@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sachintechpro-masterdata-ai
+    runtime: python
+    plan: free
+    buildCommand: echo "Python standard library; no dependencies to install"
+    startCommand: python app.py
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit

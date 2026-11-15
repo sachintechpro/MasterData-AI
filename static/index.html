@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="SachinTechpro MasterData AI: a lightweight, CSV-powered master data management and grounded-answer demo." />
+  <title>MasterData AI — One customer. One clear picture.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link href="/static/style.css" rel="stylesheet" />
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="dot small"></span> An interactive customer-data demo — powered by CSV files <button class="announcement-link" data-nav="data">See how it works <span aria-hidden="true">↗</span></button></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="wordmark" data-nav="home" aria-label="MasterData AI home"><span class="brand-icon">m<span>·</span></span><span>masterdata<span class="brand-accent">.</span></span><span class="brand-ai">ai</span></button>
+      <nav class="nav" aria-label="Main navigation">
+        <button data-nav="home" class="nav-link active">Overview</button>
+        <button data-nav="customers" class="nav-link">Customer 360</button>
+        <button data-nav="matches" class="nav-link">Match review <span class="nav-count" id="match-nav-count">·</span></button>
+        <button data-nav="assistant" class="nav-link">Ask data</button>
+        <button data-nav="data" class="nav-link">Data & QA</button>
+      </nav>
+      <span class="madeby">by <strong>SachinTechpro</strong></span>
+    </div>
+  </header>
+  <main id="main">
+    <section class="view" id="view-home" aria-label="Overview">
+      <div class="hero-wrap">
+        <div class="hero-inner">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A BETTER WAY TO SEE YOUR DATA</div>
+          <h1>Many systems.<br/><span class="highlight">One clear picture.</span></h1>
+          <p class="hero-copy">Bring scattered customer records together, resolve duplicates, and get answers in seconds. No complicated setup. Just your data, finally connected.</p>
+          <div class="hero-actions">
+            <button class="button primary large" data-nav="customers">Explore customer data <span aria-hidden="true">↗</span></button>
+            <button class="button outlined large" data-nav="matches">Review possible matches</button>
+          </div>
+          <p class="hero-caption"><span class="dot"></span> Three CSV sources connected · Fictional insurance data</p>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <svg viewBox="0 0 520 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M112 110C156 110 156 159 218 159M112 274C170 274 170 214 218 214M300 186H401" stroke="#dbd7d7" stroke-width="2" stroke-dasharray="7 8"/>
+            <rect x="16" y="62" width="142" height="95" rx="17" fill="#fff" stroke="#ece6e7" stroke-width="2"/><rect x="30" y="76" width="33" height="33" rx="10" fill="#eef6ff"/><path d="M39 99V89h15M39 94h15" stroke="#4e85bf" stroke-width="2.5" stroke-linecap="round"/><rect x="73" y="78" width="61" height="8" rx="4" fill="#dedcdd"/><rect x="73" y="94" width="40" height="7" rx="3.5" fill="#ededee"/><rect x="31" y="121" width="104" height="7" rx="3.5" fill="#f3f0f0"/>
+            <rect x="16" y="228" width="142" height="95" rx="17" fill="#fff" stroke="#ece6e7" stroke-width="2"/><rect x="30" y="242" width="33" height="33" rx="10" fill="#fff5e9"/><path d="M39 254h16v12H39zM43 250v4M51 250v4" stroke="#c79450" stroke-width="2" stroke-linecap="round"/><rect x="73" y="244" width="61" height="8" rx="4" fill="#dedcdd"/><rect x="73" y="260" width="45" height="7" rx="3.5" fill="#ededee"/><rect x="31" y="287" width="96" height="7" rx="3.5" fill="#f3f0f0"/>
+            <rect x="192" y="121" width="142" height="134" rx="27" fill="#fff0f5" stroke="#ffd1e1" stroke-width="2"/><circle cx="263" cy="176" r="30" fill="#f85085"/><path d="M252 177l8 8 16-19" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="219" y="219" width="88" height="8" rx="4" fill="#f5b6c9"/><text x="263" y="244" text-anchor="middle" fill="#ba4370" font-size="10" font-family="sans-serif" font-weight="700">ONE IDENTITY</text>
+            <rect x="368" y="137" width="137" height="101" rx="17" fill="#fff" stroke="#ece6e7" stroke-width="2"/><circle cx="401" cy="170" r="15" fill="#e9f9f2"/><path d="M396 170l4 4 7-9" stroke="#25a273" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="424" y="161" width="54" height="7" rx="3.5" fill="#dedcdd"/><rect x="424" y="176" width="37" height="6" rx="3" fill="#ededee"/><rect x="385" y="205" width="101" height="7" rx="3.5" fill="#f3f0f0"/>
+            <circle cx="173" cy="159" r="5" fill="#f85085"/><circle cx="173" cy="240" r="5" fill="#f85085"/><circle cx="353" cy="186" r="5" fill="#f85085"/>
+            <path d="M39 47c0-9 6-15 14-15M494 256c-2 10-9 15-19 15" stroke="#ffc7d9" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="illustration-label label-left"><span class="dot blue"></span> CRM data</div>
+          <div class="illustration-label label-bottom"><span class="dot amber"></span> Policy & billing</div>
+          <div class="illustration-label label-right"><span class="dot"></span> Trusted record</div>
+        </div>
+      </div>
+      <section class="section content-wrap" aria-labelledby="h-stats">
+        <div class="section-heading split"><div><div class="kicker">YOUR DATA AT A GLANCE</div><h2 id="h-stats">Your data, together.</h2><p>Actual counts from the CSV files powering this demo.</p></div><button class="plain-action" data-nav="data">View source files <span aria-hidden="true">↗</span></button></div>
+        <div class="metric-grid" id="metric-grid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      </section>
+      <section class="section content-wrap" aria-label="Your next step">
+        <div class="section-heading"><div class="kicker">THREE SMALL STEPS</div><h2>Clear data. Clear decisions.</h2><p>Try the full workflow, from disconnected records to answers.</p></div>
+        <div class="step-grid">
+          <button class="step-card" data-nav="data"><span class="step-num">01</span><span class="step-symbol">↗</span><h3>Connect the dots.</h3><p>See real CSV rows representing CRM, policy, and billing systems.</p><span class="step-action">Browse source records <span aria-hidden="true">→</span></span></button>
+          <button class="step-card" data-nav="matches"><span class="step-num">02</span><span class="step-symbol">≋</span><h3>Find the same person.</h3><p>Compare identity evidence, inspect conflicts, and approve links.</p><span class="step-action">Review matches <span aria-hidden="true">→</span></span></button>
+          <button class="step-card" data-nav="assistant"><span class="step-num">03</span><span class="step-symbol">✳</span><h3>Ask one question.</h3><p>Get a source-grounded answer across all linked records.</p><span class="step-action">Ask your data <span aria-hidden="true">→</span></span></button>
+        </div>
+      </section>
+      <section class="section content-wrap highlight-row"><div><div class="kicker">READY TO EXPLORE?</div><h2>Meet your customer, not just their records.</h2><p>See how one mastered identity links policies, claims, and billing.</p><button class="button primary" data-open-customer="MDM-1005">Meet Michael Johnson <span aria-hidden="true">↗</span></button></div><div class="profile-art" aria-hidden="true"><div class="circle-one">M</div><div class="mini-profile mini-one">CRM · Michael Johnson <span>✓</span></div><div class="mini-profile mini-two">Policy · Mike Johnson <span>?</span></div><div class="mini-profile mini-three">Billing · Michael Johnson <span>?</span></div></div></section>
+    </section>
+
+    <section class="view hide" id="view-customers" aria-label="Customer 360">
+      <div class="page-intro content-wrap"><div class="kicker">UNIFIED CUSTOMER VIEW</div><h1>One customer. <span class="highlight">Every connection.</span></h1><p>Choose a mastered customer identity. Source records remain traceable, and transactions appear only when linked.</p></div>
+      <div class="content-wrap section compact"><div class="customer-top"><label class="search-field"><span>⌕</span><input id="customer-search" placeholder="Search customer name or ID" autocomplete="off" aria-label="Search customers"/></label><span class="muted" id="customer-count">Loading customers...</span></div><div class="customer-list" id="customer-list"></div><div id="customer-detail" class="detail-panel" aria-live="polite"></div></div>
+    </section>
+
+    <section class="view hide" id="view-matches" aria-label="Identity match review">
+      <div class="page-intro content-wrap"><div class="kicker">IDENTITY RESOLUTION</div><h1>Same person. <span class="highlight">Different records.</span></h1><p>A matching score is only a suggestion. Review evidence and conflicts before linking source IDs to one customer.</p></div>
+      <div class="content-wrap section compact"><div class="section-heading split"><div><h2>Ready for your review <span class="pill pink" id="pending-count">—</span></h2><p>Every decision updates <code>identity_links.csv</code> or <code>decisions.csv</code>.</p></div><button class="button outlined" id="reset-from-matches">↺ Reset review</button></div><div id="matches-list" class="match-grid"></div></div>
+    </section>
+
+    <section class="view hide" id="view-assistant" aria-label="Ask data assistant">
+      <div class="page-intro content-wrap"><div class="kicker">ONE CONVERSATIONAL VIEW</div><h1>Just ask. <span class="highlight">Know more.</span></h1><p>Ask questions across the customer, policy, claims, and billing CSVs. Every answer shows where its facts came from.</p></div>
+      <div class="content-wrap section compact"><div class="assistant-layout"><div class="assistant-card"><div class="chat-header"><span class="assistant-orb">✳</span><div><strong>Ask MasterData</strong><small id="assistant-mode-label">Guided answers · source evidence included</small></div><span class="connected-pill"><span class="dot"></span> Ready</span></div><div class="chat-body" id="chat-body"><div class="chat-intro"><div class="assistant-orb large-orb">✳</div><h2>Hello there.</h2><p>Choose a customer, then ask what you want to know. I'll show the facts and how they connect.</p></div></div><form id="ask-form" class="chat-compose"><label for="chat-customer">Current customer</label><select id="chat-customer" aria-label="Customer to ask about"></select><div class="question-field"><input id="question-input" maxlength="500" required autocomplete="off" placeholder="Ask about claims, payments, policies..." aria-label="Your question"/><button type="submit" class="send-button" aria-label="Send question">↗</button></div></form></div><div class="assistant-sidebar"><div class="side-note"><div class="kicker">NEED AN IDEA?</div><h3>Try asking...</h3><div class="prompts"><button data-question="Give me a complete customer summary">Give me the full customer picture <span>↗</span></button><button data-question="Are there any open claims?">Are there any open claims? <span>↗</span></button><button data-question="Show me overdue payments and invoices">Any unpaid invoices? <span>↗</span></button><button data-question="What policies and renewals are recorded?">What policies are active? <span>↗</span></button><button data-question="Which sources contributed to this answer?">Where did this information come from? <span>↗</span></button></div></div><div class="side-note pale"><div class="kicker">HOW ANSWERS WORK</div><p><span id="assistant-explainer">By default, a transparent rule-based router answers using the linked CSVs. No generative model or API key is required.</span></p><p>You can optionally connect an AI model for grounded answer synthesis, using only the selected fictional customer snapshot.</p></div></div></div></div>
+    </section>
+
+    <section class="view hide" id="view-data" aria-label="Data sources and quality assurance">
+      <div class="page-intro content-wrap"><div class="kicker">UNDER THE HOOD</div><h1>Simple files. <span class="highlight">Useful proof.</span></h1><p>All application data lives in readable CSV files. Browse the source rows, download a file, and run integrity checks on demand.</p></div>
+      <div class="content-wrap section compact"><div class="source-section"><div class="section-heading split"><div><h2>Explore the source files.</h2><p>Three system feeds plus their related data and identity links.</p></div><a class="button outlined" id="csv-download" href="/api/sources/crm/download" download>↓ Download CSV</a></div><div id="source-tabs" class="source-tabs" role="group" aria-label="Select CSV source"></div><div id="source-explorer" class="source-explorer"></div></div><div class="test-section"><div class="section-heading split"><div><div class="kicker">LIVE VALIDATION</div><h2>Test the data, not just the UI.</h2><p>On-demand checks run against the current source files and links.</p></div><button id="run-tests" class="button primary">Run QA checks <span aria-hidden="true">→</span></button></div><div id="test-results" class="test-results empty-tests">Run the checks to see the results.</div></div><div class="reset-panel"><div><h3>Start fresh anytime.</h3><p>Reset only review decisions and identity links. Your original fictional source CSVs stay intact.</p></div><button id="reset-demo" class="button outlined">↺ Reset sample demo</button></div></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><span><strong>masterdata<span class="brand-accent">.</span>ai</strong> <span class="footer-divider">/</span> a SachinTechpro demonstration</span><span>Built for clarity · Powered by CSV · <button data-nav="data">View implementation</button></span></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

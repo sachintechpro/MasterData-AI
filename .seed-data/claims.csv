@@ -1,0 +1,5 @@
+claim_id,policy_id,loss_type,status,opened_date,estimated_loss
+CLM-401,POL-A001,Water damage,Open,2026-10-16,4800
+CLM-402,POL-A003,Collision,Under review,2026-11-03,3200
+CLM-403,POL-A006,Glass damage,Closed,2026-09-24,650
+CLM-404,POL-A007,Wind damage,Open,2026-11-07,1750

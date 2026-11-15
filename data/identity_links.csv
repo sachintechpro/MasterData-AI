@@ -1,0 +1,12 @@
+golden_id,source,source_id
+MDM-1001,crm,CRM-101
+MDM-1001,policy,PC-201
+MDM-1001,billing,BC-301
+MDM-1002,crm,CRM-102
+MDM-1002,policy,PC-202
+MDM-1002,billing,BC-302
+MDM-1003,crm,CRM-103
+MDM-1003,policy,PC-203
+MDM-1003,billing,BC-303
+MDM-1004,crm,CRM-104
+MDM-1005,crm,CRM-105
