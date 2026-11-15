@@ -348,7 +348,8 @@ class Handler(BaseHTTPRequestHandler):
         path = urlsplit(self.path).path
         try:
             if path == '/': return self.file_response(ROOT / 'static' / 'index.html')
-            if path in ('/static/style.css', '/static/app.js'):
+            if path in ('/about', '/about/'): return self.file_response(ROOT / 'static' / 'about.html')
+            if path in ('/static/style.css', '/static/app.js', '/static/about.css', '/static/favicon.svg'):
                 return self.file_response(ROOT / path.lstrip('/'))
             if path == '/api/health': return self.json_response({'status':'ok','storage':'CSV','service':'MasterData AI'})
             if path == '/api/overview': return self.json_response(overview())
